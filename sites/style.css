@@ -1,0 +1,248 @@
+:root{
+    --vert_body: #DAF2D7;
+    --vert_header: #E4FDE1;
+    --police: #1B4332;
+    --vert_fonce: #90CF8E;
+}
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('../fonts/poppins-bold-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'poppinsitalic';
+    src: url('../fonts/poppins-italic-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('../fonts/poppins-medium-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'poppinsmedium_italic';
+    src: url('../fonts/poppins-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family:'poppinsregular';
+    color:var(--police);
+    background-color: var(--vert_body);
+}
+h1{
+    font-family:'poppinsbold';
+    font-size:40px;
+}
+h2{
+    font-family:'poppinsbold';
+    font-size:32px;
+}
+.conteneur-carousel{
+    width:fit-content;
+
+}
+p, li{
+    font-size:18px;
+}
+figure{
+    margin-left:5%;
+    margin-bottom:5%;
+}
+figcaption{
+    margin-top:1%;
+}
+figcaption a{
+    color:var(--police);    
+    font-size:24px;
+    transition:font-size 0.5s;
+}
+header{
+    background-color: var(--vert_header);
+    display:flex;
+    padding: 2%;
+}
+header nav{
+    display:flex;
+    justify-content: space-between;
+    height:fit-content;
+    margin-left:3%;
+    
+}
+header nav a{
+    margin-right: 60%;
+    text-decoration: none;
+    color:var(--police);
+    font-weight:700;
+    font-size:18px;
+    
+}
+
+header div{
+    display:flex;
+    margin-left:60%;
+}
+header div p{
+    margin-right:5%;
+    margin-bottom:0;
+    width:10em;
+}
+
+svg{
+    position: absolute;
+    right:0;
+    top:15%;
+}
+ellipse{
+    width:50%;
+}
+
+a{
+    text-decoration: none;
+}
+.presentation{
+    width:50%;
+    margin-top:5%;
+    margin-left:5%;
+    margin-bottom:5%;
+}
+.presentation h1{
+    margin-bottom:5%;
+}
+.presentation h2{
+    width:50%;
+    margin-bottom:2%;
+}
+.presentation p{
+    width:70%;
+}
+.contact{
+    margin-left:5%;
+    display:flex;
+    justify-content: space-between;
+    width:30%;
+    margin-bottom:5%;
+}
+figure a:hover{
+    font-size:32px;
+
+}
+
+.bouton{
+    color:var(--police);
+    background-color: var(--vert_fonce);
+    height:4em;
+    width:10em;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius:15px;
+    box-shadow:3px 3px 3px var(--vert_fonce);
+    margin-right:10%;
+    transition:all 0.5s;
+}
+.bouton:hover{
+    width:10.5em;
+    height:4.5em;
+}
+.logos{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+}
+.logos img{
+    background-color:var(--vert_fonce);
+    border-radius:100px;
+}
+.cartes{
+    display:grid;
+    column-gap: 20%;
+    row-gap:10%;
+    grid-template-columns: 20% 20%;
+    justify-content: center;
+}
+.btn-primary:active{
+    background-color: #0f251c !important;  
+
+}
+
+.btn-primary{
+    background-color: var(--vert_fonce);
+    color:var(--police);
+    border:none;
+    box-shadow: 2px 2px 2px var(--vert_fonce);
+}
+.btn-primary:hover{
+    background-color: var(--police);
+    color:var(--vert_body);
+}
+
+
+.card{
+    border-radius:2em;
+    color:var(--police);
+    background-color: var(--vert_header);   
+}
+
+.page_realisations h1{
+    margin-top:2%;
+    margin-bottom:2%;
+    margin-left:20%;
+}
+.page_contact .logos{
+    margin:0;
+    width:auto;
+    justify-content: flex-start;
+}
+.conteneur_contacts{
+    display:flex;
+    justify-content: space-between;
+    padding: 0% 10%;
+    margin-top:5%;
+}
+.sec_contact{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:700px;
+    font-size:20px;
+}
+.conteneur_real{
+    display:flex;
+    justify-content: space-between;
+    padding:2% 7% 0 7%;
+    height:1080px;
+    margin-bottom:5%;
+}
+.page_real:nth-child(2) section{
+    width:40%;
+}
+strong{
+    font-family: 'poppinsbold';
+}
+.real1 img{
+    margin-bottom:10%;
+}
+.real1 ul{
+    margin-bottom:10%;
+}
