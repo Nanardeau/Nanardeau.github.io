@@ -96,6 +96,11 @@ header nav a{
     font-size:18px;
     
 }
+header nav a:nth-child(3){
+    margin-right:auto;
+    
+    text-wrap:unset;
+}
 
 header div{
     display:flex;
@@ -110,7 +115,7 @@ header div p{
 svg{
     position: absolute;
     right:0;
-    top:15%;
+    top:20%;
 }
 ellipse{
     width:50%;

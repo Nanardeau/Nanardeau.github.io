@@ -27,11 +27,11 @@
         <h1>Bonjour.</h1>
         <article>
             <h2>Je suis Bernard MICHEL, étudiant en informatique.</h2>
-            <p>Actuellement en BUT Informatique à l'IUT de Lannion, je suis issu d'un bac général à dominance scientifique, puis de deux ans en fac de droit à Rennes. J'ai pris une année pour réfléchir à mon projet professionnel et me voilà.</p>
+            <p>Actuellement en 2ème année de BUT Informatique à l'IUT de Lannion, je suis issu d'un bac général à dominance scientifique, puis de deux ans en fac de droit à Rennes. J'ai pris une année pour réfléchir à mon projet professionnel et ceci m'a guidé vers la voie de l'informatique.</p>
         </article>
    
     </section>
-    <svg width="515" height="881" viewBox="0 0 515 881" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg onload="animer()" width="515" height="881" viewBox="0 0 515 881" fill="none" xmlns="http://www.w3.org/2000/svg">
         <ellipse cx="472.5" cy="440.5" rx="472.5" ry="440.5" fill="#90CF8E"/>
     </svg> 
     <section>
@@ -87,6 +87,27 @@
             </div>
           </nav>
     </section>
+    <script>
+        function animer(){
+            let rond = document.querySelector("svg");
+            let animation = [
+                {transform: "translateX(5em)"},
+
+            ];
+
+            let timing = {
+                duration: 10000,
+                iterations: 1,
+            };
+
+            rond.animate(animation, timing);
+
+
+            
+
+        }
+
+    </script>
 </main>
 <footer>
 
